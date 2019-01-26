@@ -3,4 +3,8 @@
     <string name="trail">trail</string>
     <string name="sbtrax">SBTrax</string>
     <string name="maintitle">maintitle</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="action_emergency">Emergencies</string>
+    <string name="action_questions">Questions</string>
+    <string name="action_trails">Trails</string>
 </resources>

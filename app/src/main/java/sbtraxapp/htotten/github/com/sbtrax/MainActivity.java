@@ -1,21 +1,13 @@
 package sbtraxapp.htotten.github.com.sbtrax;
 
-import android.media.MediaPlayer;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.view.View.OnClickListener;
 import android.view.View;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private Button trail3;
     private Button trail4;
     private Button trail5;
-    private ImageButton wildLife;
-    TextView txt;
 
 
     @Override
@@ -40,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         trail3 = findViewById(R.id.trail3button);
         trail4 = findViewById(R.id.trail4button);
         trail5 = findViewById(R.id.trail5button);
-        wildLife = findViewById(R.id.wildlifebutton);
 
 
         //Handling clicking on images

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsActivity">
+
+    <TextView
+        android:id="@+id/qheader"
+        android:layout_width="360dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Questions about"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/wildlifebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/wildlifebutton"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="19dp"
+        android:contentDescription="@string/action_wild"
+        android:src="@drawable/ic_paw"
+        app:layout_constraintBottom_toTopOf="@+id/wildtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qheader" />
+
+    <TextView
+        android:id="@+id/wildtext"
+        android:layout_width="360dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="439dp"
+        android:text="Be careful of animals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/plantlifebutton"
+        app:layout_constraintTop_toBottomOf="@+id/wildlifebutton" />
+
+    <ImageButton
+        android:id="@+id/plantlifebutton"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/action_plant"
+        android:src="@drawable/ic_flor"
+        app:layout_constraintBottom_toTopOf="@+id/wildlifebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstaidbutton"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/plantext"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="Be careful of plants"
+        app:layout_constraintBottom_toTopOf="@+id/firstaidbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantlifebutton"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <ImageButton
+        android:id="@+id/firstaidbutton"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_aid"
+        app:layout_constraintBottom_toTopOf="@+id/firstaidtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantext" />
+
+    <TextView
+        android:id="@+id/firstaidtext"
+        android:layout_width="287dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="84dp"
+        android:text="Carry a first aid kit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstaidbutton" />
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -13,11 +13,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_bootprint"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        android:theme="@style/AppTheme">
+        <activity android:name=".Trail5Activity"></activity>
+        <activity android:name=".Trail4Activity" />
         <activity android:name=".SplashScreen">
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,8 +26,7 @@
         <activity android:name=".Trail3Activity" />
         <activity android:name=".EmergenciesActivity" />
         <activity android:name=".QuestionsActivity" />
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".Trail1Activity"
             android:label="@string/app_name" />

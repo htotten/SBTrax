@@ -1,10 +1,13 @@
 package sbtraxapp.htotten.github.com.sbtrax;
 
+import android.media.MediaPlayer;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.view.View.OnClickListener;
 import android.view.View;
@@ -45,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Trail2Activity.class));
             }
         });
+
+
     }
 
     @Override

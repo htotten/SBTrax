@@ -5,7 +5,11 @@ import android.media.MediaPlayer;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class EmergenciesActivity extends AppCompatActivity {
     private FloatingActionButton btn;
@@ -37,5 +41,32 @@ public class EmergenciesActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.upper_menu,menu);
+        return true;
+    }
+
+    @Override
+    //get passed the item that was clicked
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.trails:
+                Intent intentTrail = new Intent(this, MainActivity.class);
+                startActivity(intentTrail);
+                return true;
+            case R.id.questions:
+                Intent intentQ = new Intent(this, QuestionsActivity.class);
+                startActivity(intentQ);
+                return true;
+            case R.id.emergencies:
+                Intent intentE = new Intent(this, EmergenciesActivity.class);
+                startActivity(intentE);
+                return true;
+        }
+        return false;
     }
 }

@@ -80,13 +80,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    /*
-    OnClickListener captureListener = new OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-
-        }
-    };*/
 }

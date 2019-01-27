@@ -20,9 +20,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-    private ImageButton trail1;
-    private ImageButton trail2;
-    private ImageButton trail3;
+    private Button trail1;
+    private Button trail2;
+    private Button trail3;
     private ImageButton wildLife;
     TextView txt;
 

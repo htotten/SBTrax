@@ -97,11 +97,11 @@ public class QuestionsActivity extends AppCompatActivity {
                         plant.setText("");
                         break;
                     case 1:
-                        plant.setText("Wash it off.");
+                        plant.setText("Shower in cold water and apply hydrocortisone cream.");
                         break;
 
                     case 2:
-                        plant.setText("Use it for string.");
+                        plant.setText("Use the plant for string.");
                         break;
 
                 }
@@ -125,7 +125,7 @@ public class QuestionsActivity extends AppCompatActivity {
                         aid.setText("");
                         break;
                     case 1:
-                        aid.setText("Wear sunscreen. Increase UV protection by 5% per 1000 ft.");
+                        aid.setText("Wear sunscreen. Increase UV protection by 5% per 1000 ft of altitude.");
                         break;
 
                     case 2:

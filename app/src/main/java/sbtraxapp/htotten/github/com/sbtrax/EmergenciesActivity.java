@@ -18,19 +18,28 @@ public class EmergenciesActivity extends AppCompatActivity {
 
         btn = (FloatingActionButton) findViewById(R.id.emergencyButton);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.alarm2);
+        clicked = false;
 
 
         btn.setOnClickListener(new View.OnClickListener(){
 
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 if(!clicked){
                     mp.start();
                     clicked = true;
                 }
                 else{
-                    mp.stop();
-                    clicked = false;
+                    try{
+                        mp.stop();
+                        mp.prepare();
+                        clicked = false;
+                    }
+                    catch (Exception e){
+                        System.out.println(e);
+                    }
+
+
                 }
 
             }

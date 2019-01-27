@@ -7,8 +7,10 @@
     tools:context=".MainActivity">
 
 
-    <ImageButton
+    <Button
         android:id="@+id/trail1button"
+        android:text="Cold Springs Loop"
+        app:fontFamily="casual"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="56dp"
@@ -17,14 +19,14 @@
         android:layout_marginEnd="55dp"
         android:layout_marginRight="55dp"
         android:layout_marginBottom="28dp"
-        android:background="#737373"
+        android:background="@android:color/holo_green_light"
         android:contentDescription="@string/trail"
         app:layout_constraintBottom_toTopOf="@+id/trail2button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <ImageButton
+    <Button
         android:id="@+id/trail2button"
         android:layout_width="300dp"
         android:layout_height="80dp"
@@ -34,14 +36,16 @@
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         android:layout_marginBottom="29dp"
-        android:background="#737373"
+        android:background="@android:color/holo_blue_light"
         android:contentDescription="@string/trail"
+        android:text="San Ysidro Trail"
+        app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/trail3button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/trail1button" />
 
-    <ImageButton
+    <Button
         android:id="@+id/trail3button"
         android:layout_width="300dp"
         android:layout_height="80dp"
@@ -51,8 +55,10 @@
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         android:layout_marginBottom="182dp"
-        android:background="#737373"
+        android:background="@android:color/holo_purple"
         android:contentDescription="@string/trail"
+        android:text="Inspiration Point"
+        app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,56 +83,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/trailT1"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="10dp"
-        android:text="Cold Spring Trail"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/trail2button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.779"
-        app:layout_constraintStart_toEndOf="@+id/trail1button"
-        app:layout_constraintTop_toBottomOf="@+id/trail1button"
-        app:layout_constraintVertical_bias="0.614" />
-
-    <TextView
-        android:id="@+id/trailT2 "
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="23dp"
-        android:text="San Ysidro Trail"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/trail3button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.813"
-        app:layout_constraintStart_toEndOf="@+id/trail2button"
-        app:layout_constraintTop_toBottomOf="@+id/trail2button"
-        app:layout_constraintVertical_bias="0.812" />
-
-    <TextView
-        android:id="@+id/trailT3"
-        android:layout_width="300dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginBottom="29dp"
-        android:text="Inspiration Point"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/trail3button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
-        app:layout_constraintStart_toEndOf="@+id/trail3button"
-        app:layout_constraintTop_toBottomOf="@+id/trailT2 "
-        app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>

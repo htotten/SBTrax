@@ -28,14 +28,16 @@ public class Trail2Activity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.trails:
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
+                Intent intentTrail = new Intent(this, MainActivity.class);
+                startActivity(intentTrail);
                 return true;
             case R.id.questions:
-                Toast.makeText(this, "QuestionsActivity selected", Toast.LENGTH_SHORT).show();
+                Intent intentQ = new Intent(this, QuestionsActivity.class);
+                startActivity(intentQ);
                 return true;
             case R.id.emergencies:
-                Toast.makeText(this, "QuestionsActivity selected", Toast.LENGTH_SHORT).show();
+                Intent intentE = new Intent(this, EmergenciesActivity.class);
+                startActivity(intentE);
                 return true;
         }
         return false;

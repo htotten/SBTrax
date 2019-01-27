@@ -47,7 +47,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="82dp"
         android:layout_marginRight="82dp"
-        android:text="Elavation Gain:  0 ft"
+        android:text="Elevation Gain:  0 ft"
         android:textSize="24sp"
         app:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"

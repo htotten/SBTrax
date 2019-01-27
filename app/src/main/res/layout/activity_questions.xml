@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsActivity">
+
+
+    <ImageButton
+        android:id="@+id/wildlifebutton"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/action_wild"
+        app:layout_constraintBottom_toTopOf="@+id/plantlifebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/ic_paw"/>
+
+    <ImageButton
+        android:id="@+id/plantlifebutton"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:contentDescription="@string/action_plant"
+        app:layout_constraintBottom_toTopOf="@+id/wildlifebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstaidbutton"
+        app:srcCompat="@drawable/ic_flor"
+        />
+
+    <ImageButton
+        android:id="@+id/firstaidbutton"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="145dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/action_firstaid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantlifebutton"
+        app:srcCompat="@drawable/ic_aid" />
+
+</android.support.constraint.ConstraintLayout>

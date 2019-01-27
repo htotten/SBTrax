@@ -32,10 +32,10 @@ public class Trail1Activity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case R.id.questions:
-                Toast.makeText(this, "Questions selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "QuestionsActivity selected", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.emergencies:
-                Toast.makeText(this, "Questions selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "QuestionsActivity selected", Toast.LENGTH_SHORT).show();
                 return true;
         }
         return false;

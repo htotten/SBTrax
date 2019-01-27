@@ -4,20 +4,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.view.View.OnClickListener;
 import android.view.View;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
 
     private ImageButton trail1;
     private ImageButton trail2;
-
-
 
 
     @Override
@@ -48,6 +48,25 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.upper_menu,menu);
         return true;
     }
+
+    @Override
+    //get passed the item that was clicked
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.trails:
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.questions:
+                Toast.makeText(this, "Questions selected", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.emergencies:
+                Toast.makeText(this, "Questions selected", Toast.LENGTH_SHORT).show();
+                return true;
+        }
+        return false;
+    }
+
     /*
     OnClickListener captureListener = new OnClickListener() {
         @Override

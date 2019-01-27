@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -18,17 +24,19 @@
         android:layout_marginRight="181dp"
         android:text="Aid"
         android:textSize="18sp"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerAid" />
 
     <Spinner
         android:id="@+id/spinnerAid"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="96dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dialog"
         app:layout_constraintStart_toEndOf="@+id/firstaidbutton"
@@ -43,19 +51,22 @@
         android:layout_marginTop="34dp"
         android:layout_marginEnd="181dp"
         android:layout_marginRight="181dp"
+        android:layout_marginBottom="65dp"
         android:text="Plants"
         android:textSize="18sp"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerAid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerPlants" />
 
     <Spinner
         android:id="@+id/spinnerPlants"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="89dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dialog"
         app:layout_constraintStart_toEndOf="@+id/plantlifebutton"
@@ -63,11 +74,11 @@
 
     <Spinner
         android:id="@+id/spinnerCayote"
-        android:layout_width="300dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="31dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="28dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dialog"
         app:layout_constraintStart_toEndOf="@+id/wildlifebutton"
@@ -96,16 +107,11 @@
         android:id="@+id/wildlifebutton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="152dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="@string/action_wild"
         android:src="@drawable/ic_paw"
-        app:layout_constraintBottom_toTopOf="@+id/plantlifebutton"
-        app:layout_constraintEnd_toStartOf="@+id/spinnerCayote"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qheader" />
 
@@ -118,8 +124,11 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="128dp"
         android:layout_marginRight="128dp"
-        android:text="Be careful of animals"
+        android:layout_marginBottom="57dp"
+        android:text="Animals"
         android:textSize="18sp"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPlants"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerCayote" />
@@ -128,11 +137,13 @@
         android:id="@+id/plantlifebutton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginBottom="132dp"
         android:contentDescription="@string/action_plant"
         android:src="@drawable/ic_flor"
+        app:layout_constraintBottom_toTopOf="@+id/firstaidbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wildlifebutton" />
 
@@ -140,12 +151,13 @@
         android:id="@+id/firstaidbutton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="162dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="132dp"
         android:src="@drawable/ic_aid"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plantlifebutton" />
 
 
 </android.support.constraint.ConstraintLayout>
+</ScrollView>

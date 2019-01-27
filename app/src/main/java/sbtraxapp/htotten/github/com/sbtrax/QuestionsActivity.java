@@ -42,7 +42,7 @@ public class QuestionsActivity extends AppCompatActivity {
         //create a list of questions
         String[] itemsWild = new String[]{"Wildlife", "What to do if you see a cayote?", "What to do if you see a rattlesnake?"};
         String[] itemsPlants = new String[]{"Plantlife", "What to do if you encounter poison oak?", "What can you do with the yucca plant?"};
-        String[] itemsAid = new String[]{"First Aid", "What to do if you get a sunburn?", "What to do if you suffer a spinal cord injury?"};
+        String[] itemsAid = new String[]{"First Aid", "How to avoid a sunburn?", "What to do if you suffer a spinal cord injury?"};
 
         //adapter to describe how the items are displayed
         ArrayAdapter<String> adapterW = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, itemsWild);

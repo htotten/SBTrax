@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     private Button trail1;
     private Button trail2;
     private Button trail3;
+    private Button trail4;
+    private Button trail5;
     private ImageButton wildLife;
     TextView txt;
 
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         trail1 = findViewById(R.id.trail1button);
         trail2 = findViewById(R.id.trail2button);
         trail3 = findViewById(R.id.trail3button);
+        trail4 = findViewById(R.id.trail4button);
+        trail5 = findViewById(R.id.trail5button);
         wildLife = findViewById(R.id.wildlifebutton);
 
 
@@ -53,6 +57,16 @@ public class MainActivity extends AppCompatActivity {
         trail3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Trail3Activity.class));
+            }
+        });
+        trail4.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Trail4Activity.class));
+            }
+        });
+        trail5.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Trail5Activity.class));
             }
         });
 

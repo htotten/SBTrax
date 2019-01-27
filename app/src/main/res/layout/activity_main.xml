@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -9,18 +14,18 @@
 
     <Button
         android:id="@+id/trail1button"
-        android:text="Cold Springs Loop"
-        app:fontFamily="casual"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="55dp"
         android:layout_marginRight="55dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="10dp"
         android:background="@android:color/holo_green_light"
         android:contentDescription="@string/trail"
+        android:text="Cold Spring Trail"
+        app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/trail2button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,10 +37,10 @@
         android:layout_height="80dp"
         android:layout_marginStart="55dp"
         android:layout_marginLeft="55dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="15dp"
         android:background="@android:color/holo_blue_light"
         android:contentDescription="@string/trail"
         android:text="San Ysidro Trail"
@@ -51,38 +56,76 @@
         android:layout_height="80dp"
         android:layout_marginStart="55dp"
         android:layout_marginLeft="55dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:background="@android:color/holo_green_light"
+        android:contentDescription="@string/trail"
+        android:text="Inspiration Point"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trail2button" />
+
+    <Button
+        android:id="@+id/trail4button"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:contentDescription="@string/trail"
+        android:text="Lizard's Mouth"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/trail5button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trail3button" />
+
+    <Button
+        android:id="@+id/trail5button"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         android:layout_marginBottom="182dp"
-        android:background="@android:color/holo_purple"
+        android:background="@android:color/holo_green_light"
         android:contentDescription="@string/trail"
-        android:text="Inspiration Point"
+        android:text="Montecito Peak"
         app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/trail2button" />
+        app:layout_constraintTop_toBottomOf="@+id/trail4button" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="426dp"
-        android:layout_marginEnd="126dp"
-        android:layout_marginLeft="126dp"
-        android:layout_marginRight="126dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:layout_marginBottom="30dp"
         android:contentDescription="@string/maintitle"
         android:text="@string/sbtrax"
         android:textColor="?attr/colorPrimaryDark"
         android:textSize="40sp"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/trail1button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
 
 </android.support.constraint.ConstraintLayout>
+</ScrollView>

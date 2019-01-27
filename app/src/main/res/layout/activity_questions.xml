@@ -18,11 +18,28 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/action_wild"
-        app:layout_constraintBottom_toTopOf="@+id/plantlifebutton"
+        app:layout_constraintBottom_toTopOf="@+id/wildtext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/ic_paw"/>
+        android:src="@drawable/ic_paw"/>
+
+    <TextView
+        android:id="@+id/wildtext"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:text="Be careful of animals"
+        app:layout_constraintBottom_toTopOf="@+id/wildlifebutton"
+        app:layout_constraintTop_toBottomOf="@+id/plantlifebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <ImageButton
         android:id="@+id/plantlifebutton"
@@ -34,12 +51,28 @@
         android:layout_marginRight="12dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="13dp"
+        android:src="@drawable/ic_flor"
         android:contentDescription="@string/action_plant"
         app:layout_constraintBottom_toTopOf="@+id/wildlifebutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstaidbutton"
-        app:srcCompat="@drawable/ic_flor"
+        />
+    <TextView
+        android:id="@+id/plantext"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:text="Be careful of plants"
+        app:layout_constraintBottom_toTopOf="@+id/firstaidbutton"
+        app:layout_constraintTop_toBottomOf="@+id/plantlifebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
     <ImageButton
@@ -52,11 +85,29 @@
         android:layout_marginRight="12dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
-        android:contentDescription="@string/action_firstaid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plantlifebutton"
-        app:srcCompat="@drawable/ic_aid" />
+        app:layout_constraintBottom_toTopOf="@+id/firstaidtext"
+        android:src="@drawable/ic_aid" />
+
+    <TextView
+        android:id="@+id/firstaidtext"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:text="Carry a first aid kit"
+        app:layout_constraintTop_toBottomOf="@+id/firstaidbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
 
 </android.support.constraint.ConstraintLayout>
